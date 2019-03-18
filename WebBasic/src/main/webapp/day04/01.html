@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transtional.dtd">
+<html xmlns="http://www.w3.org/1999/xhml">
+  <head>
+    <title>宽度/高度</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+        body{
+            /*
+        	margin-top:0;
+        	margin-left:0;
+        	margin-bottom:0;
+        	margin-right:0;
+        	*/
+        	margin:0;
+        }
+    	#wrapper{
+    	    width:500px;
+    	    height:100px;
+    	    margin:0 auto;
+    	    /*
+    	    border-top-width:2px;
+    	    border-top-style:solid;
+    	    border-top-color:red;
+    	    */
+    	    /*
+    	    border-top:2px solid red;
+    	    border-right:2px solid red;
+    	    border-bottom:2px solid red;
+    	    border-left:2px solid red;
+    	    第16行等价于第11~13
+    	    */
+    	    border:2px solid red;
+    	    /*第22行等价于第16~19行*/
+    	    overflow:hidden;
+    	}
+    	#container{
+    		width:500px;
+    		height:100px;
+    		border:2px solid blue;
+    		margin-top:20px;
+    	}
+    </style>
+  </head>
+  
+  <body>
+     <div id="wrapper">       
+        <p>12345</p>
+        <p>12345</p>
+     </div>
+     <div id="container">
+     	<p>ABCDE</p>
+     </div>
+  </body>
+</html>
