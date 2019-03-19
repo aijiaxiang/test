@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <style type="text/css">
+      		#div1{
+      			width:400px;
+      			height:150px;
+      			border:2px solid #f00;
+      		}
+      
+      </style>
+      <script type="text/javascript">
+      		/* function createAttr(){
+      			alert(1);
+      			//1.创建属性节点
+      			var dataAttr = document.createAttribute("data");
+      			//2.设置属性值
+      			dataAttr.nodeValue = '123456';
+      			//3.给对象添加属性
+      			document.getElementById("div1").setAttributeNode(dataAttr);
+      			alert(2);
+      		} */
+      		function createAttr(){
+      	        //1.创建属性节点
+      	        var dataAttr = document.createAttribute("data");
+      	        //2.设置属性值
+      	        dataAttr.nodeValue = '123456';       
+      	        //3.给对象添加属性
+      	        document.getElementById("div1").setAttributeNode(dataAttr);
+      	       }
+      
+      
+      </script>
+   </head>
+   <body>
+    		<div id="div1"></div>
+    		<input onclick="createAttr()" type="button" value="单击我，看变化"/>   
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript" src="common.js"></script>
+      <script type="text/javascript">
+    //数组遍历       
+   	var arr1 = ['Tom',23,3.6,true];
+   	for(var i=0;i<arr1.length;i++){
+   	   document.write(arr1[i] + '<br/><br/>');
+   	}
+   	
+   	var arr2 = new Array();
+ 	arr2[0] = '中国';
+ 	arr2[1] = '人民';
+ 	arr2[7] = '共和';
+ 	arr2[9] = '国';
+ 	for(i in arr2){
+ 	   document.write(arr2[i]);
+ 	}
+ 	document.write('<br/><br/>');
+   	
+ 	//关联数组,下标为字符
+ 	var arr3 = new Array();
+ 	arr3['username'] = '张三';
+ 	arr3['sex'] = '男';
+ 	arr3['age'] = 25;
+ 	arr3['salary'] = 8963.46;
+ 	for(key in arr3){
+ 		document.write(arr3[key]+'<br/>');
+ 	}
+ 	
+ 	var arr4 = new Array();
+ 	arr4[0] = new Array();
+ 	arr4[0]["name"] = "JSD1407";
+ 	document.write(arr4[0]['name']);
+ 	
+ 	var rowset = new Array();
+ 	rowset[0] = new Array();
+ 	
+ 	rowset[0]['id']=1;
+ 	rowset[0]['username']='Tom';
+ 	rowset[0]['age']=26;
+ 	
+ 	rowset[1] = new Array();
+ 	rowset[1]['id']=3;
+ 	rowset[1]['username']='John';
+ 	rowset[1]['age']=19;   
+ 	  	
+ 	rowset[2] = new Array();
+ 	rowset[2]['id']=8;
+ 	rowset[2]['username']='Rose';
+ 	rowset[2]['age']=31;     	
+ 	/////////////////////////////////////
+ 	for(var i=0;i<rowset.length;i++){
+ 	  var person = rowset[i];
+ 	  document.write('<p>');
+ 	  document.write('编号' + person['id']);
+ 	  document.write('姓名' + person['username']);
+ 	  document.write('年龄' + person['age']);
+ 	  document.write('</p>');
+ 	}
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+      </script>
+   </head>
+   <body>
+     
+   </body>
+</html>

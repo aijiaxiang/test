@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+       <style type="text/css">
+      	#s1{
+      		width:200px;
+      		height:100px;
+      		background:#0f0;
+      	}
+      	#s2{
+      		width:300px;
+      		height:100px;
+      		background:#00f;
+      	}
+      </style>
+      <script type="text/javascript">
+        function changeAttr(){
+         //1.获取对象
+         var sEle1 = document.getElementById('s1');
+         var sEle2 = document.getElementById('s2');
+         //2.设置CSS样式
+         //window.ActiveXObject,仅IE浏览器支持
+         if(window.ActiveXObject){
+         	sEle1.style.styleFloat = 'left';
+         	sEle2.style.styleFloat = 'left';
+         } else {
+            sEle1.style.cssFloat = 'left';
+         	sEle2.style.cssFloat = 'left';
+         }
+          
+        }
+      </script>
+     
+   </head>
+   <body>
+      <div style="border:5px solid #f00">
+      	  <div id="s1"></div>
+      	  <div id="s2"></div>
+      </div>      
+      <input onclick="changeAttr()" type="button" value="单击我，看变化"/>
+   </body>
+</html>

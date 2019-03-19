@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>    
+      <script type="text/javascript">
+        var proArr = new Array();
+        proArr[1] = ['东城区','西城区','朝阳区','海淀区','丰台区'];
+        proArr[2] = ['徐家汇','浦东新区','浦西区','静安区'];
+        proArr[3] = ['南开区','河东区','河西区','和平区'];
+        proArr[4] = ['济南市','菏泽市','青岛市','烟台市','威海市']; 
+        function changeCity(){
+       	   //1.获取对象
+       	   var proEle = document.getElementById('provinces');
+       	   var cityEle = document.getElementById('cities');
+       	   //2.获取省份的值
+       	   var proVal = proEle.value;
+       	   //3.清理城市列表框
+       	   
+       	   cityEle.options.length = 0;       	   
+       	   //4.根据省份的值，动态为城市列表框添加选项(Option对象)
+       	   for(var i = 0;i<proArr[proVal].length;i++){
+       	   		var optEle = new Option(proArr[proVal][i],i);
+       	   		cityEle.add(optEle);
+       	   }
+       	   
+       	   /*
+       	   if(proVal == '1'){ //北京市
+       	   	  var optEle = new Option('东城区','1');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('西城区','2');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('海淀区','3');
+       	   	  cityEle.add(optEle);   	   	         	             	   
+       	   } else if(proVal == '2'){ //上海市
+       	   	  var optEle = new Option('浦东区','1');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('徐汇区','2');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('静安区','3');
+       	   	  cityEle.add(optEle);       	   
+       	     
+       	   } else if(proVal == '3') { //天津市
+       	   	  var optEle = new Option('河东区','1');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('河西区','2');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('和平区','3');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('南开区','4');
+       	   	  cityEle.add(optEle);       	   
+       	   
+       	   } else if(proVal == '4'){ //山东省
+       	   	  var optEle = new Option('济南市','1');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('青岛市','2');
+       	   	  cityEle.add(optEle);
+       	   	  var optEle = new Option('烟台市','3');
+       	   	  cityEle.add(optEle);
+       	   
+       	   }
+       	   */
+        }
+        
+      </script>
+     
+   </head>
+   <body onload="changeCity()">
+      
+      省份:<select id="provinces" onchange="changeCity()">
+      	<option value="1">北京市</option>
+      	<option value="2">上海市</option>
+      	<option value="3">天津市</option>
+      	<option value="4">山东省</option>
+      </select>
+      <br/><br/>
+      城市:<select id="cities">
+      </select><br/><br/>  
+   </body>
+</html>
