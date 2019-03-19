@@ -4,7 +4,7 @@ import java.util.Random;
 
 /** 敌机:是飞行物，也是敌人 */
 public class Airplane extends FlyingObject implements Enemy {
-	private int speed = 4; //敌机移动的步数
+	private int speed = 5; //敌机移动的步数
 	
 	/** 初始化实例变量 */
 	public Airplane(){
