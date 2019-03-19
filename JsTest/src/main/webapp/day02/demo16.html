@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript">
+      		function getParaCounts(){
+      			//获取整个文档中的段落总数
+      			/* var pEle = document.getElementsByTagName('p');
+      			var count = pEle.length;
+      			window.alert(count); */
+      			//获取div内的段落数
+      			var divEle = document.getElementById('a3');
+      			var c = divEle.getElementsByTagName('p');
+      			alert(c.length);
+      		}
+      
+      
+      
+      </script>
+   </head>
+   <body>
+    		<p id="a1">我现在是段落</p>
+     <p class="a2">我也是段落</p>
+     <div id="a3" style="border:2px solid #f00">
+     	<h1>我是标题</h1>
+     	<p align="left">我是段落</p>
+     	<p>我是段落</p>
+     	<p>我是段落</p>
+     	<h2>我也是标题</h2>     	
+     </div>
+     
+     <input onclick="getParaCounts()" type="button" value="单击我，看变化"/> 
+   </body>
+</html>

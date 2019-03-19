@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript" src="common.js"></script>
+      <script type="text/javascript">
+      function changeLink(){
+      		//1.获取对象
+      		var linkEle = document.getElementById('link1');
+      		//2.设置属性
+      		linkEle.setAttribute('href','http://www.baidu.com');
+      		linkEle.setAttribute('target','_blank');
+      		//设置文本
+      		linkEle.firstChild.nodeValue='百度';
+      }
+      </script>
+   </head>
+   <body>
+    		<p><a id="link1" href="#">这是一个空链接</a></p>
+    		<input onclick="changeLink()" type="button" value="单击我"/>
+   </body>
+</html>

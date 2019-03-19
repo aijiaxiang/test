@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <style type="text/css">
+      	#box{
+      		border:2px solid #f00;
+      	}
+      	</style>
+      <script type="text/javascript">
+      		function removeElement(){
+      	//1.获取对象
+      	var rowEle = document.getElementById('r2');      	
+      	//2.删除行对象
+		rowEle.parentNode.removeChild(rowEle);      	
+      }
+      
+      
+      
+      </script>
+   </head>
+   <body>
+    		<table  width="500" cellpadding="10" cellspacing="0" border="1">
+     	<tr>
+     		<td>1</td>
+     	</tr>
+     	<tr id="r2">
+     		<td>2</td>
+     	</tr>
+     	<tr>
+     		<td>3</td>
+     	</tr>     	
+     </table>
+     <input onclick="removeElement()" type="button" value="单击我，看变化"/>           
+   </body>
+</html>

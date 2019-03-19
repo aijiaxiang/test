@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript">
+      		function replaceElement(){
+      			//1.获取"被替换”的对象
+      			var pEle = document.getElementById('p1');
+      			//2.创建图像对象（替换对象）
+      			var imgEle =document.createElement('img');
+      			imgEle.setAtt ribute('src', 'i/c.jpg');
+      			//document.body.appendChild(imgEle);
+      			//3.将段落替换为图像
+      			document.body.replaceChild(imgEle, pEle);
+      		}
+      </script>
+   </head>
+   <body>
+    		<p id="p1">我现在是段落</p>
+    		<input onclick="replaceElement()" type="button" value="单击我，看变化"/>
+   </body>
+</html>

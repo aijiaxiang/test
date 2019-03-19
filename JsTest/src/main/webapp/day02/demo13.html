@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <style type="text/cxx">
+      		#box{
+      			border:2px solid #f00;
+      		}
+      </style>
+      <script type="text/javascript">
+      		function removeElement(){
+      			alert(1);
+      			//1.获取节点
+      			var divEle = document.getElementById("box");
+      			//2.删除子节点
+      			for(var i=0;i<divEle.childNodes.length;i++){
+      				divEle.removeChild(divEle.childNodes[i]);
+      				i--;
+      			}
+      			alert(00);
+      		}
+      </script>
+   </head>
+   <body>
+    		<div id="box">      
+	      <h1>我是标题1--0</h1>	      
+	      <p>我是第一段--1</p>	      
+	      <p>我是第二段--2</p>	      
+	      <h1>我是标题1--3</h1>	      
+	      <p>我是第三段--4</p>	      
+      </div>
+      <input onclick="removeElement()" type="button" value="单击我，看变化"/> 
+   </body>
+</html>
