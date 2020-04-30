@@ -34,6 +34,7 @@ public class OrderSender {
         //参数1：交换器名称
         //参数2：路由键
         //参数3：消息
+        System.out.println("yes?");
         this.amqpTemplate.convertAndSend(exChange,"order.log.debug","order.log.debug-"+msg);
         this.amqpTemplate.convertAndSend(exChange,"order.log.info","order.log.info-"+msg);
         this.amqpTemplate.convertAndSend(exChange,"order.log.warn","order.log.warn-"+msg);
