@@ -30,6 +30,7 @@ public class FanoutSender {
         //参数2：路由键,广播模式时（fanout交换器）没有路由键使用""空字符串代替
         //参数3：消息
         this.amqpTemplate.convertAndSend(exChange,"",msg);
+        System.out.println("hh");
 
     }
 }
