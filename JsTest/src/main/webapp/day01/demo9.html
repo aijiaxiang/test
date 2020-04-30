@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript" src="common.js"></script>
+      <script type="text/javascript">
+      	var arr1 = ['Tom',23,3.6,true];
+    	var str1 = arr1.join();
+    	document.write(str1 + '<br/><br/>');
+    	var str2 = arr1.join('|');
+      	document.write(str2 + '<br/><br/>');
+      	var str3 = '1~2~3~4';
+     	var arr2 = str3.split('~');
+     	for(value in arr2){
+     	   document.write(arr2[value] + '<br/><br/>');
+     	}		
+     	
+     	var arr3 = ['C','D','E'];     	
+     	document.write('数组arr3有' + arr3.length + '个成员,它们是:' + arr3 + '<br/><br/>');
+     	var count = arr3.push('F','G');
+     	document.write('数组arr3现有' + count + '个成员，它们是:' + arr3 + '<br/><br/>');
+     	var count = arr3.unshift('A','B');
+     	document.write('数组arr3现有' + count + '个成员，它们是:' + arr3 + '<br/><br/>');
+     	
+     	var first = arr3.shift();
+     	document.write('数组3现有' + arr3.length + '个成员,它们是:' + arr3 + ',成员' + first + '被删除<br/><br/>');
+     	var last = arr3.pop();     	
+     	document.write('数组3现有' + arr3.length + '个成员,它们是:' + arr3 + ',成员' + last + '被删除<br/><br/>');
+     	
+     	var a = arr3.concat('A');
+     	document.write('数组3现有' + a.length + '个成员,它们是:' + a + '被删除<br/><br/>');
+
+     	var ar = [32,1,43,65,78];
+     	/* ar.sort();
+     	document.write(ar.toString()); */
+     	
+     	/* ar.sort(sortFunc);
+     	document.write(ar.toString()); */
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+     	
+      </script>
+   </head>
+   <body>
+     
+   </body>
+</html>

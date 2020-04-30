@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript" src="common.js"></script>
+      <script type="text/javascript">
+      		//计算平均值
+      		function avg(){
+      			var args = arguments;
+      			if(args.length<2){
+      				return false;
+      			}else{
+      				var sum = 0;
+      				for(var n=0;n<args.length;n++){
+      					sum+=args[n];
+      				}
+      				return (sum/args.length);
+      			}
+      		}
+      		window.alert(avg()); //false 
+            window.alert(avg(3)); // false
+            window.alert(avg(3,5)); // 4
+            window.alert(avg(2,4,6)); //4
+            window.alert(avg(1,5,3,9)); //4.5
+      </script>
+   </head>
+   <body>
+     
+   </body>
+</html>

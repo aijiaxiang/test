@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <style type="text/css">
+      		.al{
+      			width:400px;
+      			height:150px;
+      			border:2px solid #f00;
+      		}
+      
+      </style>
+      <script type="text/javascript">
+      		function createPara(){
+      			//1.创建段落对象
+      			var pEle = document.createElement('p');
+      			//2.创建文本节点
+      			var txtNode = document.createTextNode('hh,我是新来的');
+      			//3.将文本节点添加到段落节点内
+      			pEle.appendChild(txtNode);
+      			//4.将段落节点添加到div对象
+      			document.getElementById('div1').appendChild(pEle);
+      		}
+    
+      
+      </script>
+   </head>
+   <body>
+    		<input onclick="createPara()" type="button" value="单击我，看变化"/>
+			<div id='div1' class='a1'></div>
+   </body>
+</html>

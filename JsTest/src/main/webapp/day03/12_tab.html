@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title> 
+      <style type="text/css">
+      .wrap{
+      	width:450px;
+      	height:200px;
+      	border:2px solid #f00;
+      }
+      </style>
+      <script type="text/javascript">
+      function tabEffect(id){
+        //1.获取对象
+      	var dEle1 = document.getElementById('d1');
+      	var dEle2 = document.getElementById('d2');
+      	var dEle3 = document.getElementById('d3');
+      	//2.控制对象的CSS样式
+      	if(id == 'd1'){
+      	   dEle1.style.display = 'block';
+      	   dEle2.style.display = 'none';
+      	   dEle3.style.display = 'none';
+      	} else if(id == 'd2'){
+      	   dEle1.style.display = 'none';
+      	   dEle2.style.display = 'block';
+      	   dEle3.style.display = 'none';
+      	} else if(id == 'd3'){
+      	   dEle1.style.display = 'none';
+      	   dEle2.style.display = 'none';
+      	   dEle3.style.display = 'block';
+  
+      	}
+      }
+        
+      </script>
+     
+   </head>
+   <body>
+    <p><a href="#" onclick="tabEffect('d1')">国内新闻</a>&nbsp;|&nbsp;<a href="#" onclick="tabEffect('d2')">国际新闻</a>&nbsp;|&nbsp;<a href="#" onclick="tabEffect('d3')">体育新闻</a></p>
+    <div id="d1" class="wrap">
+        <p><a href="#">明天北京将局部限行</a></p>
+        <p><a href="#">明天北京将局部限行</a></p>
+        <p><a href="#">明天北京将局部限行</a></p>
+    </div>
+    <div id="d2" class="wrap"  style="display:none;">
+        <p><a href="#">这是国际新闻</a></p>
+        <p><a href="#">这是国际新闻</a></p>
+        <p><a href="#">这是国际新闻</a></p>
+    </div>
+    <div id="d3" class="wrap" style="display:none;">
+        <p><a href="#">林李大战，林丹2:1战胜对手</a></p>
+        <p><a href="#">林李大战，林丹2:1战胜对手</a></p>
+        <p><a href="#">林李大战，林丹2:1战胜对手</a></p>
+    </div>
+    <p>哈哈哈，成功了</p>
+   </body>
+</html>

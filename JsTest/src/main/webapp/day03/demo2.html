@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript">
+      function changeAttr(){
+          //1.获取对象
+          var tableEle = document.getElementById('t1');
+          //2.设置属性(HTML DOM)
+          //注意cellPadding,cellSpacing等的写法
+          tableEle.width = '600'; 
+          tableEle.borderColor = 'red';
+          tableEle.cellPadding = '20';
+          tableEle.cellSpacing = '0';
+        }
+      </script>
+   </head>
+   <body>
+    		<table id="t1" border="1">
+      	<tr>
+      		<td>A</td>
+      		<td>A</td>
+      		<td>A</td>
+        </tr>
+      	<tr>
+      		<td>A</td>
+      		<td>A</td>
+      		<td>A</td>
+        </tr>        
+      </table>
+      <input onclick="changeAttr()" type="button" value="单击我，看变化"/>
+   </body>
+</html>

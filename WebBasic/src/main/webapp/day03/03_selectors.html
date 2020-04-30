@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transtional.dtd">
+<html xmlns="http://www.w3.org/1999/xhml">
+  <head>
+    <title>CSS选择器优先级</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+  	*{
+    	color:red;
+    }
+    p{
+        color:green;
+    }
+    .p1{color:blue;}  
+    #p2{color:yellow;}
+    .a4{ /*0,0,1,0*/
+       color:green;
+    }
+    body .a5{ /*0,0,1,1,*/
+        color:red;
+    }
+    </style>       
+  </head>
+  
+  <body>
+  	<p style="color:black;" id="p2" class="p1">我是段落1</p>
+  	<p>我是段落2</p>
+  	<p>我是段落2</p>
+  	
+  	<h1 class="a4 a5">中华人民共和国</h1>
+  	
+  </body>
+</html>

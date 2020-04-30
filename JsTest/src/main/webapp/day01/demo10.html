@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript" src="common.js"></script>
+      <script type="text/javascript">
+      		var now = new Date();
+      		var year = now.getYear();
+      		//IE将返回2014,而Chrome等将返回114 
+      		document.write(year + '年<br/><br/>');
+      		
+      		var fullYear = now.getFullYear();
+            var month = now.getMonth() + 1;
+            var day  = now.getDate();
+            var weeksArr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+            var week = now.getDay();         
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            document.write(fullYear + '年<br/><br/>');
+            document.write(month + '月<br/><br/>');
+            document.write(day + '日<br/><br/>');
+            document.write(weeksArr[week] + '<br/><br/>');
+            document.write(hours + '点<br/><br/>');
+            document.write(minutes + '分<br/><br/>');
+            document.write(seconds + '秒<br/><br/>');
+            /////////////////////////////////
+            var timer = now.getTime();
+            document.write(timer);
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      </script>
+   </head>
+   <body>
+     
+   </body>
+</html>

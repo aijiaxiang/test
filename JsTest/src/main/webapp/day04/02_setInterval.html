@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>templates</title>
+	<script type="text/javascript">
+		var i = 9;		
+		function timesCount(){			
+			//1.获取对象
+			var agreeBtnEle = document.getElementById('agreeBtn');
+			//2.设置属性
+			agreeBtnEle.value = '我同意(' + i + ')';
+			i--;
+			if(i <= 0){
+				window.clearInterval(timeId);
+				agreeBtnEle.value = '我同意';
+				agreeBtnEle.disabled = false;
+			}
+		}
+		var timeId = window.setInterval("timesCount()",1000);
+	</script>
+</head>
+
+<body>
+	<h2 align="center">用户注册许可协议</h2>
+	<p align="center">...........................</p>
+	<p align="center">...........................</p>
+	<p align="center">...........................</p>
+	<p align="center">...........................</p>
+	<p align="center">...........................</p>
+	<p align="center">...........................</p>
+	<p align="center">...........................</p>
+    <p align="center"><input onclick="window.open('03_config.html')" type="button" id="agreeBtn" value="我同意(10)" disabled="disabled"/></p>
+</body>
+</html>

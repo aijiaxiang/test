@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>
+      <script type="text/javascript" src="common.js"></script>
+      <script type="text/javascript">
+      function changeText(){
+          //1.获取对象
+          var pEle = document.getElementById('p1');
+          //2.获取文本节点对象
+          var txtNode = pEle.firstChild;
+          //3.修改文本节点对象的节点值
+          txtNode.nodeValue =  '中华人民共和国';
+        }
+      
+      
+      
+      </script>
+   </head>
+   <body>
+    		<p id="p1">123</p>
+      		<input onclick="changeText()" type="button" value="单击我，看变化"/>
+   </body>
+</html>

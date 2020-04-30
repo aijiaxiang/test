@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>XHTML</title>    
+      <script type="text/javascript">
+        function addChild(){
+       	   //1.获取对象
+       	   var  inputEle = document.getElementById('names');
+       	   var  selEle = document.getElementById('cities');
+       	   //2.获取文本框的值
+       	   var txt = inputEle.value; 
+       	   //3.创建Option对象(构造函数方式)
+       	   var optEle = new Option(txt,'',false,true);
+       	   //4.将Option对象添加到select对象
+       	   selEle.add(optEle);
+       	   //5.清除文本框的值
+       	   inputEle.value = '';       		
+        }
+        function clearOptions(){
+        	//1.获取对象
+        	var selEle = document.getElementById('cities');
+        	//2.清理Option对象
+        	/*
+        	for(var i = 0; i< selEle.options.length;i++){
+        	    selEle.remove(i);
+        	    i--;
+        	}
+        	*/
+        	selEle.options.length = 0;
+        }
+      </script>
+     
+   </head>
+   <body>
+      <input type="text" id="names"/><br/><br/>
+      <select id="cities">
+      </select><br/><br/>
+      <input onclick="addChild()" type="button" value="单击我，看变化"/>
+      <input onclick="clearOptions()"type="button" value="清理掉所有OPTION"/>
+   </body>
+</html>
